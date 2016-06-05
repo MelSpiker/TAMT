@@ -10,11 +10,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	char str1[10][50];
 	char str2[10][50];
 
-	ifstream file1("file1.txt"); // открытие первого файла
-	ifstream file2("file2.txt"); // открытие второго файла
+	ifstream file1("file1.txt"); // РѕС‚РєСЂС‹С‚РёРµ РїРµСЂРІРѕРіРѕ С„Р°Р№Р»Р°
+	ifstream file2("file2.txt"); // РѕС‚РєСЂС‹С‚РёРµ РІС‚РѕСЂРѕРіРѕ С„Р°Р№Р»Р°
 
 
-	//считывание первого файла							 
+	//СЃС‡РёС‚С‹РІР°РЅРёРµ РїРµСЂРІРѕРіРѕ С„Р°Р№Р»Р°							 
 	{ int i = 0;
 	while (file1) {
 		const int max_lenght = 50;
@@ -27,7 +27,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 
-	//считывание второго файла
+	//СЃС‡РёС‚С‹РІР°РЅРёРµ РІС‚РѕСЂРѕРіРѕ С„Р°Р№Р»Р°
 	{ int i = 0;
 	while (file2) {
 		const int max_lenght = 50;
@@ -40,7 +40,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 
 
-	//printf содержание первого файла 
+	//printf СЃРѕРґРµСЂР¶Р°РЅРёРµ РїРµСЂРІРѕРіРѕ С„Р°Р№Р»Р° 
 	for (int j = 0; j < 3; j++) {
 		for (int i = 0; i < 3; i++) {
 			printf_s("%c", str1[j][i]);
@@ -49,7 +49,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	printf_s("\n");
 
-	// printf содержание второго файла 
+	// printf СЃРѕРґРµСЂР¶Р°РЅРёРµ РІС‚РѕСЂРѕРіРѕ С„Р°Р№Р»Р°
 	for (int j = 0; j < 3; j++) {
 		for (int i = 0; i < 3; i++) {
 			printf_s("%c", str2[j][i]);
@@ -59,7 +59,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf_s("\n");
 
 
-	//различие между ПЕРВЫМ И ВТОРЫМ
+	//СЂР°Р·Р»РёС‡РёРµ РјРµР¶РґСѓ РџР•Р Р’Р«Рњ Р Р’РўРћР Р«Рњ
 	for (int i = 0; i < 3; i++) {
 		if ((strcmp(str1[i], str2[i]) > 0) || strcmp(str1[i], str2[i]) < 0) {
 			printf_s("file1.txt %d ", i + 1);
@@ -71,7 +71,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	printf_s("\n");
 
-	//различие между ВТОРЫМ И ПЕРВЫМ
+	//СЂР°Р·Р»РёС‡РёРµ РјРµР¶РґСѓ Р’РўРћР Р«Рњ Р РџР•Р Р’Р«Рњ
 	for (int i = 0; i < 3; i++) {
 		if ((strcmp(str2[i], str1[i]) > 0) || strcmp(str2[i], str1[i]) < 0) {
 			printf_s("file2.txt %d ", i + 1);
