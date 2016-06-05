@@ -23,7 +23,7 @@ void doxygen(FILE *F)
 		case '/':
 			sym1 = fgetc(F);
 			sym2 = fgetc(F);
-			if ((sym1 == '*') && (sym2 == '*')) //если видим /**
+			if ((sym1 == '*') && (sym2 == '*')) //если видим /** 
 			{
 				while (fgetc(F) != '\\');
 				func = true;
